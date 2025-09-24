@@ -1,6 +1,5 @@
 import Navbar from "./Components/Navbar";
-import StatusBoxes from "./Components/StatusBoxes";
-import Buttons from "./Components/Buttons";
+import Management from "./Components/Management";
 import Footer from "./Components/Footer";
 
 import "./App.css";
@@ -9,8 +8,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <StatusBoxes />
-      <Buttons />
+      <Management />
       <Footer />
     </>
   );

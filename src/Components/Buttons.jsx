@@ -1,6 +1,6 @@
 import Container from "./Container";
 
-const Buttons = () => {
+const Buttons = ({ toggleStatus, setToggleStatus }) => {
   const btns = ["All", "Pending", "Submitted", "Reviewed"];
   return (
     <>
@@ -8,12 +8,11 @@ const Buttons = () => {
         <div className="text-right mb-16">
           {btns.map((btn, i) => (
             <button
-              className={`${
-                i === 0 ? "toggle-btn rounded-l-md" : "toggle-btn"
-              } ${
-                i === btns.length - 1 ? "toggle-btn rounded-r-md" : "toggle-btn"
-              }`}
+              className={`toggle-btn ${i === 0 && "rounded-l-md"} ${
+                i === btns.length - 1 && "rounded-r-md"
+              } ${toggleStatus === btn && "!text-white !bg-purple-500"}`}
               key={i}
+              onClick={() => setToggleStatus(btn)}
             >
               {btn}
             </button>
