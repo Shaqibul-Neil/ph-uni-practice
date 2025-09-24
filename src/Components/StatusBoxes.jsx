@@ -1,5 +1,15 @@
+import Container from "./Container";
+import StatusBox from "./StatusBox";
 const StatusBoxes = () => {
-  return <div></div>;
+  return (
+    <>
+      <Container>
+        <div className="grid grid-cols-3 gap-6 my-24">
+          <StatusBox />
+        </div>
+      </Container>
+    </>
+  );
 };
 
 export default StatusBoxes;
