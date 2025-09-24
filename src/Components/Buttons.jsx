@@ -2,6 +2,7 @@ import Container from "./Container";
 
 const Buttons = ({ toggleStatus, setToggleStatus }) => {
   const btns = ["All", "Pending", "Submitted", "Reviewed"];
+
   return (
     <>
       <Container>

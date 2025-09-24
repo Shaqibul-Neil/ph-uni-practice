@@ -10,3 +10,6 @@
 .toggle-btn {
   @apply px-4 py-2 text-purple-500 bg-purple-100 text-xl font-bold cursor-pointer;
 }
+.padding {
+  @apply px-2 py-1 rounded-md;
+}
