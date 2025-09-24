@@ -7,3 +7,6 @@
 .navLink {
   @apply text-gray-600 text-base;
 }
+.toggle-btn {
+  @apply px-4 py-2 text-purple-500 bg-purple-100 text-xl font-bold cursor-pointer;
+}
